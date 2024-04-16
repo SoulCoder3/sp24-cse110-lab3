@@ -9,38 +9,137 @@
     <div>
         <header>
             <h1>404 Team's First Meeting Minutes</h1>
+            <em>4/11/2024</em>
             <nav>
                 <ul>
-                    <li><a href="">导航内容 </a></li>
+                    <li><a href="#1">Present member</a></li>
+                    <li><a href="#2">Agenda</a></li>
+                    <li><a href="#3">Goal Goal $ Value</a></li>
+                    <li><a href="#4">Group Bonding Event</a></li>
+                    <li><a href="#5">Audio Recording</a></li>
+                    <li><a href="#6">Video Recording</a></li>
+                    <li><a href="#7">Signature Form</a></li>
                 </ul>
             </nav>
         </header>
         <hr>
         <main>
             <div>
-            <section>
-                <h2>First part</h2>
-                <p>content1: <span>Activity Things</span>
-                The <b>first meeting</p></b> <strong>we are playing kradsd.</strong> 
-                <i>aaaaa</i>
-                <em>ssssss</em>
-                <a>aaaaaaa</a>
-                <br>ggggggg</br>
+            <section id="1">
+                <h2>Present members</h2>
+                <ul>
+                    <li>Yvanna</li>
+                    <li>Brandon</li>
+                    <li>Royce</li>
+                    <li>Joseph</li>
+                    <li>Joey</li>
+                    <li>Jiawei</li>
+                    <li>Amdadul</li>
+                    <li>Jessica</li>
+                    <li>Zhaoyu</li>
+                </ul>
+            </section>
+            <section id="2">
+                <details>
+                    <summary>Agenda</summary>
+                    <ul>
+                        <li>Pre meeting: Nothing</li>
+                        <li>New business: Team introductions, plan for assignments due monday, team agreement, create organization</li>
+                        <li>next meeting: TBD</li>
+                        <li>Big Decisions: Team name, Team mascot, Team Logo, informal team policy</li>
+                    </ul>
+                </details>
+            </section>
+            <section id="3">
+                <h2>Team name: 404 Team</h2>
+                <p>We finally decided to use <b>404</b> as the name of our team.
+                <span>404</span> embodies the essence of innovation and exploration in the realm of software engineering.<br>
+                Like space explorers venturing into uncharted territories, we boldly aim to push the boundaries of technology, seeking new frontiers and solutions to complex challenges.<br>
+                Just like astronauts rely on each other and cutting edge technology for successful missions, our team thrives on collaboration, expertise, and a shared vision of shaping the future through software development.<br>
                 </p>
+            </section>
+            <section id="4">
+                <h2>Team Goal & Value</h2>
                 <ol>
-                    <li>Unordered List 1</li>
-                    <li>Unordered List 2</li>
+                    <li><em>Emphasizing teamwork, communication, and a collective</em> problem mentality.</li>
+                    <li>Fostering creativity and out of the box thinking to develop solutions.</li>
+                    <li>Being flexible and adaptive to changes, challenges and evolving requirements, reflecting the dynamic nature of space exploration.</li>
+                    <li>Building a <b>supportive, inclusive, and diverse</b> community withing the team, fostering camaraderie and mutial repect, much like the close-knit communities formed within space crews.</li>
                 </ol>
             </section>
-
-            <section>
-                <h2>Second part</h2>
-                <p>content2</p>
+            <section id="5">
+                <h2>Group Bonding Event</h2>
+                <p>
+                    <strong>After the course, we played <i>skribbl</i> as an icebreaker.</strong> It is a fun way to enagage a group when we enjoyed games and drawing.<br>
+                </p>
+                <img src="./pictures/icebreak.jpg" height="400" width="500">
+            </section>
+            <section id="5">
+                <h2>Audio Recording</h2>
+                <audio controls autoplay>
+                    <source src="./audio/2-13. Constant Moderato Piano Arrange.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+            <section id="6">
+                <h2>Video Recording</h2>
+                <video width="360" height="270" controls>
+                    <source src="./video/self introduction.mp4" type="video/mp4">
+                </video>
             </section>
         </main>
         <hr>
-        <footer>
-            <p>Ending</p>
+        <footer id="7">
+            <form>
+                <fieldset>
+                    <legend>Signature of the Recorder</legend>
+                    <label>First Name: </label>
+                    <input type="text"><br><br>
+                    <label>Last Name: </label>
+                    <input type="text"><br>
+                    <br>
+                    <label>Choose a Activity: </label>
+                    <select>
+                        <option value="Skribbl">Skribbl</option>
+                        <option value="Quizbreaker">Quizbreaker</option>
+                    </select>
+                    <br><br>
+                    <label>Choose a Participant: </label>
+                    <input list="member"/>
+                    <datalist id="member">
+                        <option value="Yvanna"></option>
+                        <option value="Brandon"></option>
+                        <option value="Royce"></option>
+                        <option value="Joseph"></option>
+                        <option value="Joey"></option>
+                        <option value="Jiawei"></option>
+                        <option value="Amdadul"></option>
+                        <option value="Jessica"></option>
+                        <option value="Zhaoyu"></option>
+                    </datalist>
+                    <br><br>
+                    <input type="checkbox" name="checkList"/>
+                    <label>Participation of all</label><br>
+                    <input type="checkbox" name="checkList"/>
+                    <label>The meeting completed its due content</label><br>
+                    <input type="checkbox" name="checkList"/>
+                    <label>Participants are actively</label><br>
+                    <br><br>
+                    <p>How did you feel about this meeting?</p>
+                    <input type="radio" name="evaluate" value="3"/>
+                    <label>Great</label><br>
+                    <input type="radio" name="evaluate" value="2"/>
+                    <label>Good</label><br>
+                    <input type="radio" name="evaluate" value="1"/>
+                    <label>Normal</label><br>
+                    <br><br>
+                    <textarea>Any comment</textarea>
+                    <br><br>
+                    <label>Recording Date: </label>
+                    <input type="date"/>
+                    <br><br>
+                    <button onclick="alert('Submit successful')">submit</button>
+                </fieldset>
+            </form>
         </footer>
     </div>
   </body> 
