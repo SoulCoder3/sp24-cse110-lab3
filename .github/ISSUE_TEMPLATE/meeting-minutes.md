@@ -2,7 +2,7 @@
 name: Meeting Minutes
 about: Describe minutes of meeting details
 title: ''
-labels: ''
+labels: meeting report
 assignees: SoulCoder3
 
 ---
