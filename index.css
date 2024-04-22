@@ -166,6 +166,7 @@ fieldset {
 @media screen and (max-width: 600px){
     body {
         font-size: 20pt;
+        min-width: 1200px;
     }
 
     h2 {
@@ -175,6 +176,7 @@ fieldset {
     header {
         text-align: center;
     }
+
     .bar ul {
         display: flex;
         flex-wrap: wrap;
