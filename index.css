@@ -33,9 +33,10 @@ em {
         font-size: 1.2rem;
         color: saddlebrown;
         margin: 2vh;
-    }
-    :hover {
-        color: #003ce2;
+
+        &:hover {
+            color: #003ce2;
+        }
     }
 }
 
@@ -44,12 +45,12 @@ em {
 }
 
 #team {
-    color: color(xyz-d50 0.2005 0.14089 0.4472);
+    color: color(from green srgb r g b / 0.5);
     background-color: whitesmoke;
 }
 
 #b_type{
-    color: color-mix(in hsl longer hue, hsl(120 100% 50%) 20%, rgb(37, 52, 141));
+    color: color-mix(in srgb, #34c9eb 75%, black);
 }
 
 img {
@@ -95,7 +96,6 @@ h2 + p {
 
 input ~ label {
     font-family: "Platypi", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
@@ -147,7 +147,8 @@ fieldset {
 
 .formList {
     padding-left: 5px;
-    li {
+
+    & li {
         list-style-type: none;
         margin: 1pt;
     }
