@@ -163,7 +163,7 @@ fieldset {
     position: relative;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 600px){
     body {
         font-size: 20pt;
     }
@@ -181,7 +181,7 @@ fieldset {
     .ems {
         padding-left: 0;
     }
-    
+
     audio {
         width: 90%;
     }
