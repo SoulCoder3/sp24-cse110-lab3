@@ -1,0 +1,153 @@
+:root {
+    --main-bg-color: wheat;
+    --main-em-color: #800080;
+    --button-hover-color: #003ce2;
+    --button-active-color: royalblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color:rgb(126, 3, 3);
+    margin-left: 10px;
+}
+
+body {
+    background-color: var(--main-bg-color, lightblue);
+}
+
+/*Set the color of em tap with fallbacks*/
+em {
+    color: var(--main-em-color, lightblue);
+}
+
+*.ems li {
+    font-size: 1.6em; 
+}
+
+.rem {
+    li {
+        font-size: 1.2rem;
+        color: saddlebrown;
+        margin: 2vh;
+    }
+    :hover {
+        color: #003ce2;
+    }
+}
+
+#team_name {
+    color: hsl(5, 98%, 54%);
+}
+
+#team {
+    color: color(xyz-d50 0.2005 0.14089 0.4472);
+    background-color: whitesmoke;
+}
+
+#b_type{
+    color: color-mix(in hsl longer hue, hsl(120 100% 50%) 20%, rgb(37, 52, 141));
+}
+
+img {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    display: block;
+}
+
+*[class="record"] {
+    margin-left: 5px;
+}
+
+div[name="checkList"] {
+    border-style: inset;
+    border-color: rgb(203, 201, 221);
+    border-width: 3px;
+    padding: 0pt 2pt 5pt 10pt;
+    display: inline-block;
+}
+
+div[name="rating"] {
+    border-style: inset;
+    border-color: rgb(6, 3, 34);
+    border-width: 3px;
+    padding: 0pt 2pt 5pt 10pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30cm;
+    max-width: fit-content;
+}
+
+.three > span {
+    text-decoration: underline;
+}
+  
+h2 + p {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: .5em;
+}
+
+input ~ label {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*change the color of navigation bar when selected*/
+nav a:hover,  nav li:hover{
+    color: rgb(209, 44, 44);
+}
+
+summary:has(+ ul) {
+    margin-left: 20pt;
+}
+
+button {
+    padding: 5px 16px;
+    color: #000000d9;
+    border: 1px solid #071063;
+    border-radius: 2px;
+    line-height: 1.4;
+    box-shadow: 0 2px #00000004;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--button-hover-color);
+}
+
+button:active {
+    box-shadow: 0 0 0 6px var(--button-active-color);
+    border-color: aqua;
+}
+
+textarea {
+    border-color: brown;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.formList {
+    padding-left: 5px;
+    li {
+        list-style-type: none;
+        margin: 1pt;
+    }
+}

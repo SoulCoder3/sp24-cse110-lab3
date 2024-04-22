@@ -3,11 +3,46 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/png" sizes="16x16" href="./pictures/favicon-16x16.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>404 Team Meeting Minutes</title> 
   </head> 
   <body>
     <div>
         <header>
+        <style>
+            video {
+                clear: both;
+                display: block;
+                margin: auto;
+                border-style: ridge;
+                border-width: 10px;
+                border-color: brown;
+                padding-top: 1mm;
+                padding-left: 1mm;
+                padding-right: 1mm;
+                padding-bottom: 1mm;
+                background-color: black;
+            }
+
+            audio {
+                clear: both;
+                display: block;
+                margin: auto;
+                border-style: ridge;
+                border-radius: 1cm;
+                border-width: 10px;
+                border-color: rgb(66, 90, 224);
+                background-color: lightblue;
+                border-top-left-radius: 10px 20px;
+                padding: 1px 1px 1px 1px;
+            }
+        </style>
             <h1>404 Team's First Meeting Minutes</h1>
             <em>4/11/2024</em>
             <nav>
@@ -28,7 +63,7 @@
             <div>
                 <section id="1">
                     <h2>Present members</h2>
-                    <ul>
+                    <ul class="ems">
                         <li>Yvanna</li>
                         <li>Brandon</li>
                         <li>Royce</li>
@@ -44,7 +79,7 @@
                     <h2>Agenda List</h2>
                     <details>
                         <summary>Agenda</summary>
-                        <ul>
+                        <ul class="rem">
                             <li>Pre meeting: Nothing</li>
                             <li>New business: Team introductions, plan for assignments due monday, team agreement, create organization</li>
                             <li>next meeting: TBD</li>
@@ -54,9 +89,9 @@
                 </section>
                 <section id="3">
                     <h2>Team name: 404 Team</h2>
-                    <p>We finally decided to use <b>404</b> as the name of our team.
-                    <span>404</span> embodies the essence of innovation and exploration in the realm of software engineering.<br>
-                    Like space explorers venturing into uncharted territories, we boldly aim to push the boundaries of technology, seeking new frontiers and solutions to complex challenges.<br>
+                    <p class="three">We finally decided to use <b id="team_name">404</b> as the name of our team.
+                    <span id="team">404</span> embodies the essence of innovation and exploration in the realm of software engineering.<br>
+                    <span>Like space explorers venturing into uncharted territories, we boldly aim to push the boundaries of technology, seeking new frontiers and solutions to complex challenges.</span><br>
                     Just like astronauts rely on each other and cutting edge technology for successful missions, our team thrives on collaboration, expertise, and a shared vision of shaping the future through software development.<br>
                     </p>
                 </section>
@@ -66,7 +101,7 @@
                         <li><em>Emphasizing teamwork, communication, and a collective</em> problem mentality.</li>
                         <li>Fostering creativity and out of the box thinking to develop solutions.</li>
                         <li>Being flexible and adaptive to changes, challenges and evolving requirements, reflecting the dynamic nature of space exploration.</li>
-                        <li>Building a <b>supportive, inclusive, and diverse</b> community withing the team, fostering camaraderie and mutial repect, much like the close-knit communities formed within space crews.</li>
+                        <li>Building a <b id="b_type">supportive, inclusive, and diverse</b> community withing the team, fostering camaraderie and mutial repect, much like the close-knit communities formed within space crews.</li>
                     </ol>
                 </section>
                 <section id="5">
@@ -84,7 +119,7 @@
                 </section>
                 <section id="7">
                     <h2>Video Recording</h2>
-                    <video width="360" height="270" controls>
+                    <video width="450" height="360" controls>
                         <source src="./video/self_introduction.mp4" type="video/mp4">
                     </video>
                 </section>
@@ -92,55 +127,73 @@
         </main>
         <hr>
         <footer id="8">
-            <form>
+            <form style="color: rgb(29, 62, 172);">
                 <fieldset>
                     <legend>Signature of the Recorder</legend>
-                    <label>First Name: </label>
-                    <input type="text"><br><br>
-                    <label>Last Name: </label>
-                    <input type="text"><br>
-                    <br>
-                    <label>Choose a Activity: </label>
-                    <select>
-                        <option value="Skribbl">Skribbl</option>
-                        <option value="Quizbreaker">Quizbreaker</option>
-                    </select>
-                    <br><br>
-                    <label>Choose a Participant: </label>
-                    <input list="member">
-                    <datalist id="member">
-                        <option value="Yvanna"></option>
-                        <option value="Brandon"></option>
-                        <option value="Royce"></option>
-                        <option value="Joseph"></option>
-                        <option value="Joey"></option>
-                        <option value="Jiawei"></option>
-                        <option value="Amdadul"></option>
-                        <option value="Jessica"></option>
-                        <option value="Zhaoyu"></option>
-                    </datalist>
-                    <br><br>
-                    <input type="checkbox" name="checkList">
-                    <label>Participation of all</label><br>
-                    <input type="checkbox" name="checkList">
-                    <label>The meeting completed its due content</label><br>
-                    <input type="checkbox" name="checkList">
-                    <label>Participants are actively</label><br>
-                    <br><br>
-                    <p>How did you feel about this meeting?</p>
-                    <input type="radio" name="evaluate" value="3">
-                    <label>Great</label><br>
-                    <input type="radio" name="evaluate" value="2">
-                    <label>Good</label><br>
-                    <input type="radio" name="evaluate" value="1">
-                    <label>Normal</label><br>
-                    <br><br>
-                    <textarea>Any comment</textarea>
-                    <br><br>
-                    <label>Recording Date: </label>
-                    <input type="date">
-                    <br><br>
-                    <button onclick="alert('Submit successful')">submit</button>
+                    <ul class="formList">
+                        <li>
+                            <label class="record">First Name: </label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label class="record">Last Name: </label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label class="record">Choose a Activity: </label>
+                            <select>
+                                <option value="Skribbl">Skribbl</option>
+                                <option value="Quizbreaker">Quizbreaker</option>
+                            </select>
+                        </li>
+                        <li><label class="record">Choose a Participant: </label>
+                            <input list="member">
+                            <datalist id="member">
+                                <option value="Yvanna"></option>
+                                <option value="Brandon"></option>
+                                <option value="Royce"></option>
+                                <option value="Joseph"></option>
+                                <option value="Joey"></option>
+                                <option value="Jiawei"></option>
+                                <option value="Amdadul"></option>
+                                <option value="Jessica"></option>
+                                <option value="Zhaoyu"></option>
+                            </datalist>
+                        </li>
+                        <br>
+                        <li>
+                            <div name="checkList">
+                                <p>Check List</p>
+                                <input type="checkbox" name="checkList">
+                                <label>Participation of all</label><br>
+                                <input type="checkbox" name="checkList">
+                                <label>The meeting completed its due content</label><br>
+                                <input type="checkbox" name="checkList">
+                                <label>Participants are actively</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div name="rating">
+                                <p>How did you feel about this meeting?</p>
+                                <input type="radio" name="evaluate" value="3">
+                                <label>Great</label>
+                                <input type="radio" name="evaluate" value="2">
+                                <label>Good</label>
+                                <input type="radio" name="evaluate" value="1">
+                                <label>Normal</label>
+                            </div>
+                        </li>
+                        <li>
+                            <textarea placeholder="Any comment"></textarea>
+                        </li>
+                        <li>
+                            <label>Recording Date: </label>
+                            <input type="date">
+                        </li>
+                        <li>
+                            <button onclick="alert('Submit successful')">submit</button>
+                        </li>
+                    </ul>
                 </fieldset>
             </form>
         </footer>
