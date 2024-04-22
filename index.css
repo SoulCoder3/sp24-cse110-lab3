@@ -164,9 +164,11 @@ fieldset {
 }
 
 @media screen and (max-width: 600px){
-    body {
+    body, html{
         font-size: 20pt;
-        min-width: 800px;
+        width: 100vw; 
+        overflow-x: hidden;
+        padding: 1em 0;
     }
 
     h2 {
