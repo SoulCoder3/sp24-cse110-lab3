@@ -29,7 +29,7 @@ em {
 }
 
 .rem {
-    li {
+    & li {
         font-size: 1.2rem;
         color: saddlebrown;
         margin: 2vh;
