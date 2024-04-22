@@ -167,8 +167,22 @@ fieldset {
     body {
         font-size: 20pt;
     }
-
-    h2 {
+    header {
         text-align: center;
+    }
+    .bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bar li {
+        margin: 5px;
+    }
+    .ems {
+        padding-left: 0;
+    }
+    
+    audio {
+        width: 90%;
     }
 }
