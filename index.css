@@ -175,6 +175,17 @@ fieldset {
     header {
         text-align: center;
     }
+    .bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bar li {
+        margin: 5px;
+    }
+    .ems {
+        padding-left: 0;
+    }
 
     audio {
         width: 50%;
