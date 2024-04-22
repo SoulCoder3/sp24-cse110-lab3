@@ -167,4 +167,8 @@ fieldset {
     body {
         font-size: 12pt;
     }
+
+    h2 {
+        text-align: center;
+    }
 }
