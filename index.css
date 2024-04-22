@@ -183,8 +183,9 @@ fieldset {
 
     .bar li {
         margin: 5px;
+        list-style-type: none;
     }
-    
+
     .ems {
         padding-left: 0;
     }
