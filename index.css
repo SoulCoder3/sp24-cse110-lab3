@@ -25,6 +25,7 @@ em {
 
 *.ems li {
     font-size: 1.6em; 
+    position: static;
 }
 
 .rem {
@@ -149,5 +150,21 @@ fieldset {
     li {
         list-style-type: none;
         margin: 1pt;
+    }
+}
+
+.grid_div {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Define three rows */
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+    position: relative;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        font-size: 12pt;
     }
 }
