@@ -180,9 +180,11 @@ fieldset {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .bar li {
         margin: 5px;
     }
+    
     .ems {
         padding-left: 0;
     }
