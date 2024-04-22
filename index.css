@@ -148,7 +148,7 @@ fieldset {
 .formList {
     padding-left: 5px;
 
-    & li {
+    li {
         list-style-type: none;
         margin: 1pt;
     }
