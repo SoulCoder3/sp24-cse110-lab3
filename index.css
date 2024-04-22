@@ -29,7 +29,7 @@ em {
 }
 
 .rem {
-    & li {
+    li {
         font-size: 1.2rem;
         color: saddlebrown;
         margin: 2vh;
@@ -64,7 +64,7 @@ img {
     margin-left: 5px;
 }
 
-div[name="checkList"] {
+div[value="checkList"] {
     border-style: inset;
     border-color: rgb(203, 201, 221);
     border-width: 3px;
@@ -72,7 +72,7 @@ div[name="checkList"] {
     display: inline-block;
 }
 
-div[name="rating"] {
+div[value="rating"] {
     border-style: inset;
     border-color: rgb(6, 3, 34);
     border-width: 3px;
