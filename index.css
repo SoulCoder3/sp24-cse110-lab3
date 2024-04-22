@@ -169,13 +169,6 @@ fieldset {
     }
 
     audio {
-        clear: both;
-                display: block;
-                margin: auto;
-                border-style: ridge;
-                border-radius: 1cm;
-                border-width: 10px;
-                border-color: rgb(66, 90, 224);
-                background-color: lightblue;
+        width: 80%;
     }
 }
