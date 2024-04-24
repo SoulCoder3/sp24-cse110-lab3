@@ -9,6 +9,10 @@
 * What we are working now
 * What we need to do in the future
 
+##### For Next Meeting
+* what we should complete before the next meeting
+* ...
+
 ##### Task Goal
 * ...
 
